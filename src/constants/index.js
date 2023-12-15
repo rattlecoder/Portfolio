@@ -23,6 +23,17 @@ import {
     jobit,
     tripguide,
     threejs,
+    inv,
+    gfg,
+    java,
+    python,
+    snow,
+    postgres,
+    cpp,
+    spring,
+    ffreak,
+    nassist,
+    atletas,
   } from "../assets";
   
   export const navLinks = [
@@ -42,19 +53,19 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Frontend Developer",
       icon: web,
-    },
-    {
-      title: "React Native Developer",
-      icon: mobile,
     },
     {
       title: "Backend Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Data Structure and Algorithms",
+      icon: mobile,
+    },
+    {
+      title: "Data Analyst",
       icon: creator,
     },
   ];
@@ -69,12 +80,12 @@ import {
       icon: css,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
+      name: "C++",
+      icon: cpp,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "JAVA",
+      icon: java,
     },
     {
       name: "React JS",
@@ -85,8 +96,8 @@ import {
       icon: redux,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "Postgres",
+      icon: postgres,
     },
     {
       name: "Node JS",
@@ -97,110 +108,55 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "Spring Boot",
+      icon: spring,
     },
     {
       name: "git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+      name: "Snowflake",
+      icon: snow,
+    }
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Data Analyst",
+      company_name: "Innovaccer",
+      icon: inv,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Feb 2022 - Current",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Added the custom functionality organization code for CCDA Parser and built a new logic that helped parsing the custom segments of received XMLs into CSVs and received the Spot Award for the same.",
+        "Built logic making use of Slack webhooks with Python to notify when a file comes to SFTP, its details and also the detailed notification of the file when synced to Elastic Search thus reducing manual effort to validate every time.",
+        "Built script to fetch the data from MixPanel API and MongoDB and migrate to some AWS S3 bucket and Postgres which would then further be used for powering up the Dashboard using PowerBI.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Technical Content Writer Intern",
+      company_name: "Geeks For Geeks",
+      icon: gfg,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Nov 2020 - Jan 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Contributed articles based on Data Structures and Algorithms and Competitive Programming.",
+        "Helped in improving their current articles and algorithms.",
       ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    }
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Atletas",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A web based tool where different users can create posts, upload images, comment, like or dislike on other user’s post with complete Authentication, Security and several other cool features such as Searching a post using its name and Hashtags, Pagination, Recommendation of the related posts based on the selected Post etc.",
       tags: [
         {
           name: "react",
@@ -211,55 +167,63 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "nodejs",
           color: "pink-text-gradient",
         },
+        {
+          name: "expressjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "redux",
+          color: "green-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: atletas,
+      source_code_link: "https://atletas-bash.netlify.app/",
     },
     {
-      name: "Job IT",
+      name: "News Assist",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A simple voice recognition and news fetching tool which uses the Alan AI and news API along with React JS hooks. A user can simply ask Alan to search for different news headlines related to some specific source, topic, person etc and Alan even reads out the news to you plus many other live interactions as well.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "newsapi",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "alanai",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: nassist,
+      source_code_link: "https://alan-assist.netlify.app/",
     },
     {
-      name: "Trip Guide",
+      name: "Fit-Freak",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A conprehensive fitness app that demonstrates different exercises with detailed Animations and information with the functionality to choose different kind of exercises, muscle groups, equipments, pull related Youtube videos and display similar target muscles and exercices with full Searching and Pagination features.",
       tags: [
         {
-          name: "nextjs",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "materialui",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "rapidapi",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: ffreak,
+      source_code_link: "https://fitt-freak.netlify.app/",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
