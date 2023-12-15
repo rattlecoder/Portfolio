@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
+import { slideIn } from "../utils/motion"; 
 
 const Contact = () => {
   const formRef = useRef();
@@ -33,8 +33,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_vquayju',
-        'template_yngcvqi',
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Shashank",
@@ -42,7 +42,7 @@ const Contact = () => {
           to_email: "shashank.trivedi02@gmail.com",
           message: form.message,
         },
-        'HTZFzTtu8gx8IqtHG'
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
